@@ -6,6 +6,10 @@ All notable changes to [remark-preset-bpmn-io](https://github.com/bpmn-io/remark
 
 ***Note:** Yet to be released changes appear here.*
 
+## 0.1.0
+
+* `DEPS`: update to `retext-preset-bpmn-io@0.0.2`
+
 ## 0.0.1
 
 * `CHORE`: initial release
