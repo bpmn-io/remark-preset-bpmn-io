@@ -23,6 +23,20 @@ Don't __do__ _this_.
   WOOP
 * OTHER
 
+## Larger lists (2)
+
+*   Perform library integration test
+    ```plain
+    > clean + install bpmn-js via npm
+    > test it works
+    ```
+
+*   Release demo
+    * FOO
+    * BAR
+
+*   Write blog post
+
 ## License
 
 Some or not.

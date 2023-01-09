@@ -77,7 +77,7 @@ const remarkPresetBpmnIo = {
     // @ts-expect-error: types of bridges don’t work.
     [ remarkRetext, unified().use(retextEnglish).use(retextPresetBpmnIo) ],
     remarkPresetLintRecommended,
-    [ remarkLintListIndent, 'space' ],
+    [ remarkLintListIndent, 'mixed' ],
     remarkCommentConfig,
     remarkValidateLinks,
     [ remarkLintBlockquoteIndentation, 2 ],
