@@ -6,6 +6,10 @@ All notable changes to [remark-preset-bpmn-io](https://github.com/bpmn-io/remark
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.2.1
+
+* `FIX`: correct list linting
+
 ## 0.2.0
 
 * `FEAT`: improve bpmn.io styles
