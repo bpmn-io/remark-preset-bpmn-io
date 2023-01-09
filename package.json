@@ -81,7 +81,7 @@
     "remark-toc": "^8.0.0",
     "remark-validate-links": "^12.1.0",
     "retext-english": "^4.0.0",
-    "retext-preset-bpmn-io": "^0.0.1",
+    "retext-preset-bpmn-io": "^0.0.2",
     "unified": "^10.0.0"
   },
   "devDependencies": {
