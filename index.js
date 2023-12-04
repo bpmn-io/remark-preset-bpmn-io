@@ -64,6 +64,8 @@ import remarkGithub from 'remark-github';
 /** @type {Preset} */
 const remarkPresetBpmnIo = {
   settings: {
+
+    // @ts-expect-error
     bullet: '*',
     fences: true,
     strong: '_',
@@ -76,56 +78,154 @@ const remarkPresetBpmnIo = {
 
     // @ts-expect-error: types of bridges don’t work.
     [ remarkRetext, unified().use(retextEnglish).use(retextPresetBpmnIo) ],
+
+    // @ts-expect-error
     remarkPresetLintRecommended,
+
+    // @ts-expect-error
     [ remarkLintListIndent, 'mixed' ],
     remarkCommentConfig,
     remarkValidateLinks,
+
+    // @ts-expect-error
     [ remarkLintBlockquoteIndentation, 2 ],
+
+    // @ts-expect-error
     [ remarkLintCheckboxCharacterStyle, { checked: 'x', unchecked: ' ' } ],
+
+    // @ts-expect-error
     remarkLintCheckboxContentIndent,
+
+    // @ts-expect-error
     [ remarkLintCodeBlockStyle, 'fenced' ],
+
+    // @ts-expect-error
     remarkLintDefinitionCase,
+
+    // @ts-expect-error
     remarkLintDefinitionSpacing,
+
+    // @ts-expect-error
     [ remarkLintEmphasisMarker, '_' ],
+
+    // @ts-expect-error
     remarkLintFencedCodeFlag,
+
+    // @ts-expect-error
     [ remarkLintFencedCodeMarker, '`' ],
+
+    // @ts-expect-error
     [ remarkLintFileExtension, 'md' ],
+
+    // @ts-expect-error
     remarkLintFinalDefinition,
+
+    // @ts-expect-error
     remarkLintFirstHeadingLevel,
+
+    // @ts-expect-error
     [ remarkLintHeadingStyle, 'atx' ],
+
+    // @ts-expect-error
     [ remarkLintLinkTitleStyle, '"' ],
+
+    // @ts-expect-error
     [ remarkLintMaximumHeadingLength, false ],
+
+    // @ts-expect-error
     [ remarkLintMaximumLineLength, false ],
+
+    // @ts-expect-error
     remarkLintNoConsecutiveBlankLines,
+
+    // @ts-expect-error
     remarkLintNoDuplicateDefinedUrls,
+
+    // @ts-expect-error
     remarkLintNoDuplicateDefinitions,
+
+    // @ts-expect-error
     remarkLintNoDuplicateHeadingsInSection,
+
+    // @ts-expect-error
     remarkLintNoEmphasisAsHeading,
+
+    // @ts-expect-error
     remarkLintNoEmptyUrl,
+
+    // @ts-expect-error
     remarkLintNoFileNameArticles,
+
+    // @ts-expect-error
     remarkLintNoFileNameConsecutiveDashes,
+
+    // @ts-expect-error
     [ remarkLintNoFileNameIrregularCharacters, '\\.a-zA-Z0-9-_' ],
+
+    // @ts-expect-error
     remarkLintNoFileNameMixedCase,
+
+    // @ts-expect-error
     remarkLintNoFileNameOuterDashes,
+
+    // @ts-expect-error
     remarkLintNoHeadingContentIndent,
+
+    // @ts-expect-error
     remarkLintNoHeadingIndent,
+
+    // @ts-expect-error
     remarkLintNoHeadingLikeParagraph,
+
+    // @ts-expect-error
     remarkLintNoHtml,
+
+    // @ts-expect-error
     [ remarkLintNoMissingBlankLines, { exceptTightLists: true } ],
+
+    // @ts-expect-error
     remarkLintNoMultipleToplevelHeadings,
+
+    // @ts-expect-error
     remarkLintNoParagraphContentIndent,
+
+    // @ts-expect-error
     remarkLintNoReferenceLikeUrl,
+
+    // @ts-expect-error
     remarkLintNoShellDollars,
+
+    // @ts-expect-error
     remarkLintNoTableIndentation,
+
+    // @ts-expect-error
     remarkLintNoTabs,
+
+    // @ts-expect-error
     remarkLintNoUnneededFullReferenceImage,
+
+    // @ts-expect-error
     remarkLintNoUnneededFullReferenceLink,
+
+    // @ts-expect-error
     [ remarkLintOrderedListMarkerValue, 'ordered' ],
+
+    // @ts-expect-error
     [ remarkLintRuleStyle, '---' ],
+
+    // @ts-expect-error
     [ remarkLintStrongMarker, '_' ],
+
+    // @ts-expect-error
     [ remarkLintTableCellPadding, 'padded' ],
+
+    // @ts-expect-error
     remarkLintTablePipeAlignment,
+
+    // @ts-expect-error
     remarkLintTablePipes,
+
+    // @ts-expect-error
     [ remarkLintUnorderedListMarkerStyle, '*' ],
     [
       remarkToc,
