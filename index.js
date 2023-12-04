@@ -64,6 +64,8 @@ import remarkGithub from 'remark-github';
 /** @type {Preset} */
 const remarkPresetBpmnIo = {
   settings: {
+
+    // @ts-expect-error
     bullet: '*',
     fences: true,
     strong: '_',
@@ -73,8 +75,6 @@ const remarkPresetBpmnIo = {
     listItemIndent: 'mixed'
   },
   plugins: [
-
-    // @ts-expect-error: types of bridges don’t work.
     [ remarkRetext, unified().use(retextEnglish).use(retextPresetBpmnIo) ],
     remarkPresetLintRecommended,
     [ remarkLintListIndent, 'mixed' ],
