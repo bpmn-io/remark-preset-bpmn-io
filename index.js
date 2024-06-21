@@ -60,6 +60,7 @@ import remarkLintUnorderedListMarkerStyle from 'remark-lint-unordered-list-marke
 import remarkToc from 'remark-toc';
 import remarkGfm from 'remark-gfm';
 import remarkGithub from 'remark-github';
+import remarkFrontmatter from 'remark-frontmatter';
 
 /** @type {Preset} */
 const remarkPresetBpmnIo = {
@@ -75,6 +76,7 @@ const remarkPresetBpmnIo = {
     listItemIndent: 'mixed'
   },
   plugins: [
+    [ remarkFrontmatter, [ 'yaml' ] ],
     [ remarkRetext, unified().use(retextEnglish).use(retextPresetBpmnIo) ],
     remarkPresetLintRecommended,
     [ remarkLintListItemIndent, 'mixed' ],
