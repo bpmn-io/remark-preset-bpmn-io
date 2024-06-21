@@ -40,7 +40,7 @@ import remarkLintNoHeadingContentIndent from 'remark-lint-no-heading-content-ind
 import remarkLintNoHeadingIndent from 'remark-lint-no-heading-indent';
 import remarkLintNoHeadingLikeParagraph from 'remark-lint-no-heading-like-paragraph';
 import remarkLintNoHtml from 'remark-lint-no-html';
-import remarkLintListIndent from 'remark-lint-list-item-indent';
+import remarkLintListItemIndent from 'remark-lint-list-item-indent';
 import remarkLintNoMissingBlankLines from 'remark-lint-no-missing-blank-lines';
 import remarkLintNoMultipleToplevelHeadings from 'remark-lint-no-multiple-toplevel-headings';
 import remarkLintNoParagraphContentIndent from 'remark-lint-no-paragraph-content-indent';
@@ -77,7 +77,7 @@ const remarkPresetBpmnIo = {
   plugins: [
     [ remarkRetext, unified().use(retextEnglish).use(retextPresetBpmnIo) ],
     remarkPresetLintRecommended,
-    [ remarkLintListIndent, 'mixed' ],
+    [ remarkLintListItemIndent, 'mixed' ],
     remarkCommentConfig,
     remarkValidateLinks,
     [ remarkLintBlockquoteIndentation, 2 ],
