@@ -1,6 +1,6 @@
 {
   "name": "remark-preset-bpmn-io",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A remark preset for bpmn.io projects",
   "repository": {
     "type": "git",
