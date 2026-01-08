@@ -1,10 +1,10 @@
 # Escape test
 
-We want to ensure that SPECIAL_WORDS and https://some_links are not escaped unnecessarily.
+We want to ensure that SPECIAL\_WORDS and https\://some\_links are not escaped unnecessarily.
 
 Also
 
 * [ ] This
 * [ ] Tasklist
 
-#some-link
+\#some-link
