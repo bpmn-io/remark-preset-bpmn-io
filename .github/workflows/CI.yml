@@ -21,3 +21,6 @@ jobs:
       run: npm ci
     - name: Build
       run: npm run all
+    - name: Ensure no tracked changes
+      run: |
+        git diff --quiet
