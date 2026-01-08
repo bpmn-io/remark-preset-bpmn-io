@@ -61,6 +61,7 @@ import remarkToc from 'remark-toc';
 import remarkGfm from 'remark-gfm';
 import remarkGithub from 'remark-github';
 import remarkFrontmatter from 'remark-frontmatter';
+import remarkRelaxedEscaping from './remark-relaxed-escaping.js';
 
 /** @type {Preset} */
 const remarkPresetBpmnIo = {
@@ -69,8 +70,8 @@ const remarkPresetBpmnIo = {
     // @ts-expect-error
     bullet: '*',
     fences: true,
-    strong: '_',
-    emphasis: '_',
+    strong: '*',
+    emphasis: '*',
     ruleSpaces: false,
     rule: '-',
     listItemIndent: 'mixed'
@@ -88,7 +89,7 @@ const remarkPresetBpmnIo = {
     [ remarkLintCodeBlockStyle, 'fenced' ],
     remarkLintDefinitionCase,
     remarkLintDefinitionSpacing,
-    [ remarkLintEmphasisMarker, '_' ],
+    [ remarkLintEmphasisMarker, '*' ],
     remarkLintFencedCodeFlag,
     [ remarkLintFencedCodeMarker, '`' ],
     [ remarkLintFileExtension, 'md' ],
@@ -124,7 +125,7 @@ const remarkPresetBpmnIo = {
     remarkLintNoUnneededFullReferenceLink,
     [ remarkLintOrderedListMarkerValue, 'ordered' ],
     [ remarkLintRuleStyle, '---' ],
-    [ remarkLintStrongMarker, '_' ],
+    [ remarkLintStrongMarker, '*' ],
     [ remarkLintTableCellPadding, 'padded' ],
     remarkLintTablePipeAlignment,
     remarkLintTablePipes,
@@ -138,7 +139,8 @@ const remarkPresetBpmnIo = {
       }
     ],
     remarkGfm,
-    remarkGithub
+    remarkGithub,
+    remarkRelaxedEscaping
   ]
 };
 

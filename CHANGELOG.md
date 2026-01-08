@@ -4,7 +4,7 @@ All notable changes to [remark-preset-bpmn-io](https://github.com/bpmn-io/remark
 
 ## Unreleased
 
-___Note:__ Yet to be released changes appear here._
+***Note:** Yet to be released changes appear here.*
 
 ## 0.3.1
 

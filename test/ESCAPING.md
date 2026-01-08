@@ -1,10 +1,10 @@
 # Escape test
 
-This test documents the expected escaping behavior. SPECIAL\_WORDS and https\://some\_links have their underscores escaped for round-trip safety.
+We want to ensure that SPECIAL_WORDS and https://some_links are not escaped unnecessarily.
 
 Also
 
 * [ ] This
 * [ ] Tasklist
 
-\#some-link
+#some-link

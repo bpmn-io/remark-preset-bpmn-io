@@ -1,6 +1,6 @@
 # foo
 
-Don't __do__ _this_.
+Don't **do** *this*.
 
 ## Your table
 
