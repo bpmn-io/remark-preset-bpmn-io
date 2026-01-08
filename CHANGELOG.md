@@ -6,6 +6,10 @@ All notable changes to [remark-preset-bpmn-io](https://github.com/bpmn-io/remark
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.4.0
+
+* `DEPS`: update `remark*`
+
 ## 0.3.1
 
 * `FIX`: handle front-matter (`yaml`)
