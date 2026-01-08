@@ -1,6 +1,6 @@
 # Escape test
 
-We want to ensure that SPECIAL\_WORDS and https\://some\_links are not escaped unnecessarily.
+This test documents the expected escaping behavior. SPECIAL\_WORDS and https\://some\_links have their underscores escaped for round-trip safety.
 
 Also
 
